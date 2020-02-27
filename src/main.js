@@ -4,13 +4,12 @@ import { bindActionHandler } from "card-tools/src/action";
 
 const OPTIONS = [
   "name",
-  "id",
+  "input_name",
   "icon",
-  "active",
-  "condition"
+  "state"
 ]
 
-class TemplateEntityRow extends LitElement {
+class ButtonEntityRow extends LitElement {
 
   static get properties() {
     return {
@@ -125,7 +124,7 @@ class TemplateEntityRow extends LitElement {
 }
 
 if(!customElements.get("button-entity-row")) {
-  customElements.define("button-entity-row", TemplateEntityRow);
+  customElements.define("button-entity-row", ButtonEntityRow);
   const pjson = require('../package.json');
   console.info(`%cbutton-ENTITY-ROW ${pjson.version} IS INSTALLED`,
   "color: green; font-weight: bold",
