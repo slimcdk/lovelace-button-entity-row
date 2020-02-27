@@ -1,5 +1,5 @@
 {
-  "name": "weekday-entity-row",
+  "name": "button-entity-row",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com:slimcdk/lovelace-weekday-entity-row"
+    "url": "github.com:slimcdk/lovelace-button-entity-row"
   },
   "keywords": [],
   "author": "Christian Skjerning",

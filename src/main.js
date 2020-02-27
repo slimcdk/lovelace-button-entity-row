@@ -3,19 +3,11 @@ import {subscribeRenderTemplate, hasTemplate} from "card-tools/src/templates";
 import { bindActionHandler } from "card-tools/src/action";
 
 const OPTIONS = [
+  "name",
+  "id",
   "icon",
   "active",
-  "name",
-  "secondary",
-  "state",
-  "condition",
-  "image",
-  "entity",
-  // Secret option -
-  // Set color to a hs-color value ("[<hue>,<saturation>]")
-  // with hue in the range 0-360 and saturation 0-100.
-  // Works only if entity is unset and active is set.
-  "color",
+  "condition"
 ]
 
 class TemplateEntityRow extends LitElement {
@@ -132,10 +124,10 @@ class TemplateEntityRow extends LitElement {
   }
 }
 
-if(!customElements.get("template-entity-row")) {
-  customElements.define("template-entity-row", TemplateEntityRow);
+if(!customElements.get("button-entity-row")) {
+  customElements.define("button-entity-row", TemplateEntityRow);
   const pjson = require('../package.json');
-  console.info(`%cTEMPLATE-ENTITY-ROW ${pjson.version} IS INSTALLED`,
+  console.info(`%cbutton-ENTITY-ROW ${pjson.version} IS INSTALLED`,
   "color: green; font-weight: bold",
   "");
 }
